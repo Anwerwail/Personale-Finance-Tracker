@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="cs2.css"> <!-- Link to CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Blurred background -->
+    <div class="blur-background"></div>
+    <img class="top-right-image" src="image (2).png" alt="Your Image">
+    <div class="container">
+        <h1>TFC Personal Finance Tracker</h1>
+
+        <div class="input-group">
+            <label for="expense-name">اسم النفقة:</label>
+            <input type="text" id="expense-name" placeholder="Enter expense name">
+        </div>
+        <div class="input-group">
+            <label for="expense-amount">مقدار المال:</label>
+            <input type="number" id="expense-amount" placeholder="Enter amount">
+        </div>
+        <div class="input-group">
+            <label for="expense-category">الفئة:</label>
+            <select id="expense-category" class="b1">
+                <option value="food">الاكل 😋</option>
+                <option value="housing">الايجار 🏠</option>
+                <option value="transportation">النقل 🚌</option>
+                <option value="entertainment">الترفيه 😁</option>
+                <option value="utilities">الخدمات 🛠️</option>
+                <option value="other">اخرى</option>
+            </select>
+        </div>
+        <button class="btn" onclick="addExpense()">اضافة النفقة</button>
+        <h2>المصاريف</h2>
+        <ul class="expenses-list" id="expenses-list">
+            <!-- Expenses will be dynamically added here -->
+        </ul>
+        <div class="total-expenses" id="total-expenses">Total Expenses: $0.00</div>
+        <div class="note" id="note"></div>
+        <div class="remaining-budget" id="remaining-budget">Remaining Budget: $0.00</div>
+        <div class="monthly-budget">
+            <label for="monthly-budget">الشهرية:</label>
+            <input type="number" id="monthly-budget" placeholder="قداه تسلك ؟">
+        </div>
+    </div>
+
+    <script src="ch2.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
